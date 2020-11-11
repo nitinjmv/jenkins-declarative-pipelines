@@ -1,0 +1,3 @@
+def getGitChanges() {
+  return true;
+}
