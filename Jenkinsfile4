@@ -1,5 +1,5 @@
 def gv
-def CODE_CHANGES = gv.getGitChanges()
+def CODE_CHANGES
 
 pipeline {
     agent any
@@ -9,6 +9,7 @@ pipeline {
             steps {
                 script{
                     gv = load "script4.groovy"
+                    CODE_CHANGES = gv.getGitChanges()
                 }
             }
         }
