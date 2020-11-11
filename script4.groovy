@@ -1,3 +1,4 @@
 def getGitChanges() {
-  return true;
+  return true
 }
+  return this
